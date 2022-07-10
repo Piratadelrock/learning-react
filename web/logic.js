@@ -1,19 +1,20 @@
 function crearCards() {
   setTimeout(() => {
     const info = [
-      {
-        title: "",
-        category: "Entretenimiento",
-      },
-      {
-        title: "",
-        category: "Entretenimiento",
-      },
-      {
-        title: "",
-        category: "Entretenimiento",
-      },
-    ];
+
+    {
+      category: "Entretenimiento",
+      title: "‘Thor: Love and Thunder’ hace de los cortos de Darryl canon en el MCU",
+    },
+    {
+      category: "CRIPTOMONEDAS",
+      title: "Aumentan las estafas con criptomonedas en YouTube",
+    },
+    {
+      category: "APSS & SOFTWARE",
+      title: "Google propone dividir su negocio publicitario ante señalamientos anticompetitivos",
+    },
+  ];
 
     const containerRef = document.getElementsByClassName("container")[0];
     // usamos backticks ``
@@ -21,8 +22,8 @@ function crearCards() {
       (art) => `<div class="card">
         <div class="card-left"></div>
         <div class="card-right">
-            <h2>Entretenimiento</h2>
-            <p>‘Thor: Love and Thunder’ hace de los cortos de Darryl canon en el MCU</p>
+            <h2>${art.category}</h2>
+            <p>${art.title}</p>
         </div>
     </div>`
     );
